@@ -17,7 +17,7 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">C</span>:\<span class="selector-tag">Users</span>\<span class="selector-tag">siworae</span>&gt;<span class="selector-tag">git</span> <span class="selector-tag">--version</span></span><br><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">version</span> 2<span class="selector-class">.10</span><span class="selector-class">.2</span><span class="selector-class">.windows</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
 <h2 id="3、注册GitHub账号和创建GitHub仓库"><a href="#3、注册GitHub账号和创建GitHub仓库" class="headerlink" title="3、注册GitHub账号和创建GitHub仓库"></a>3、注册GitHub账号和创建GitHub仓库</h2><p>在<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a>注册GitHub账号</p>
 <p>1)、创建仓库</p>
-<p><img src="C:\Java\hexo\source\image\1.jpg" alt=""></p>
+<img src="/2019/01/04/hexo+github/1.jpg" title="说明">
 <p>创建git仓库时候，仓库的名称有格式要求，例如我的GitHub仓库用户名是siworae,仓库名称就是<strong>siworae.github.io</strong></p>
 <p>然后点击下面的create repository就可以成功创建GitHub仓库了,创建完之后会跳转到一个新的界面,不要关闭.留着它</p>
 <h2 id="4、安装hexo"><a href="#4、安装hexo" class="headerlink" title="4、安装hexo"></a>4、安装hexo</h2><p>hexo官方中文文档:<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a></p>
@@ -45,14 +45,14 @@
 <p>.ssh为隐藏文件夹,需要开启显示隐藏文件才能看到</p>
 <p>在文件夹里面找到id_rsa.pub文件,用记事本或者notepad打开,复制.</p>
 <p>打开GitHub登陆,点击settings</p>
-<img src="/2019/01/04/hexo+github/1.jpg" title="说明">
-<p><img src="/image/3.jpg" alt=""></p>
+<img src="/2019/01/04/hexo+github/2.jpg" title="说明">
+<img src="/2019/01/04/hexo+github/3.jpg" title="说明">
 <p>在SSH Keys/Add new界面中,title填写标题,可随意,key一栏填写刚刚复制的id_rsa.pub文件里面的内容.点击页面下面的Add SSH key就添加成功了</p>
 <h3 id="2-、配置hexo配置文件"><a href="#2-、配置hexo配置文件" class="headerlink" title="2)、配置hexo配置文件"></a>2)、配置hexo配置文件</h3><p>在hexo安装根目录下找到_config.yml文件.</p>
 <p>用记事本或者notepad打开,在最后面添加GitHub的信息</p>
 <p>注意在hexo所有的配置文件中,冒号后面都需要跟一个空格,不然会报错</p>
 <p>repository填写你的仓库地址,在创建完仓库之后就会跳转到这个界面,选择SSH.复制路径</p>
-<p><img src="C:\Java\hexo\source\image\4.jpg" alt=""></p>
+<img src="/2019/01/04/hexo+github/4.jpg" title="说明">
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:siworae/siworae.github.io.git</span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 <p>这个时候你的GitHub已经和hexo关联起来了</p>
 <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br><span class="line"><span class="attribute">heox d</span></span><br></pre></td></tr></table></figure>
