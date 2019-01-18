@@ -1,9 +1,12 @@
 ---
-title: 基于netty的websocket实现
+title: 基于Netty的websocket简单实现
 abbrlink: 64c322b1
 date: 2019-01-18 10:07:16
 categories:
+- Java
+- Netty
 tags:
+- websocket
 ---
 
 # 基于Netty的websocket简单实现
