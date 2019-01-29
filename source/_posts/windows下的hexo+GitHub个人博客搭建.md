@@ -117,19 +117,19 @@ hexo n #完整命令为hexo new，用于新建一篇文章
 
 在任意目录新建hexo文件夹(名字任意),我在C盘中新建了一个hexo文件夹,进入这个文件夹,鼠标右键选择"Git Bash here"进入git命令行窗口,执行以下命令设施node、安装hexo和git依赖.之后所有的操作都需要在这个目录下完成
 
-### 1)、初始化hexo
-
-```
-hexo init
-```
-
-### 2)、安装
+### 1)、安装
 
 文中所有路径都尽量不要包含中文路径,不然很容易出现各种稀奇古怪的错误
 
 ```
 npm  install  hexo-cli -g
 npm  install  hexo-deployer-git  --save
+```
+
+### 2)、初始化hexo
+
+```
+hexo init
 ```
 
 ### 3)、安装依赖
